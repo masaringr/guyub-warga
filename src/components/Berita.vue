@@ -64,7 +64,7 @@ const menus = ref([
         </div>
       </div>
       <div
-        class="col-span-12 text-emerald-700/80 flex items-center justify-center gap-1 mb-4 mt-2"
+        class="col-span-12 text-emerald-700/80 flex items-center justify-center gap-1 mt-2"
       >
         <span class="font-semibold text-sm">Lihat Info Lainnya</span>
         <ChevronDoubleRightIcon class="w-4 h-4 stroke-2" />
