@@ -5,14 +5,31 @@ const routes = [
   {
     path: "/",
     name: "Home",
-    component: () => import("../pages/Home.vue"),
+    component: () => import("@pages/Home.vue"),
     meta: { judul: "Home" },
   },
   {
-    path: "/login",
-    name: "Login",
-    component: () => import("../pages/Login.vue"),
-    meta: { judul: "Login" },
+    path: "/userauth",
+    name: "Auth",
+    component: () => import("@pages/UserAuth.vue"),
+    meta: { judul: "Auth" },
+    children: [
+      {
+        path: "/userauth/login",
+        name: "Login",
+        component: () => import("@pages/auth/Login.vue"),
+      },
+      {
+        path: "/userauth/register",
+        name: "Register",
+        component: () => import("@pages/auth/Register.vue"),
+      },
+      {
+        path: "/userauth/forgot-pwd",
+        name: "ForgotPwd",
+        component: () => import("@pages/auth/ForgotPwd.vue"),
+      },
+    ],
   },
 ];
 
