@@ -19,7 +19,9 @@ console.log("setup home...");
       <span class="flex gap-2">
         <BellIcon class="text-yellow-400/90 w-7 h-7" />
         <div class="w-[2px] bg-slate-300"></div>
-        <UserIcon class="text-yellow-400/90 w-7 h-7" />
+        <RouterLink :to="{ name: 'Login' }">
+          <UserIcon class="text-yellow-400/90 w-7 h-7" />
+        </RouterLink>
       </span>
     </div>
   </header>
