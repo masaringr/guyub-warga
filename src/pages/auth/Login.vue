@@ -1,8 +1,14 @@
 <script setup>
+import { ref } from "vue";
 import {
   ArrowRightOnRectangleIcon,
   DocumentTextIcon,
+  EyeIcon,
+  EyeSlashIcon,
 } from "@heroicons/vue/24/outline";
+import { vMaska } from "maska";
+
+const isShowPassword = ref(false);
 </script>
 <template>
   <div>
@@ -13,8 +19,10 @@ import {
           >Nomor HP</label
         >
         <input
-          type="number"
-          placeholder="000-000-000-000"
+          placeholder="0000-0000-0000"
+          type="numeric"
+          v-maska
+          data-maska="####-####-####"
           class="border border-slate-300 block w-full rounded-lg p-2.5 px-4 pt-4 text-slate-700/90 focus:border-transparent focus:outline-emerald-500/90"
         />
       </div>
@@ -24,10 +32,24 @@ import {
           >Password</label
         >
         <input
-          type="password"
+          :type="!isShowPassword ? 'password' : 'text'"
           placeholder="*******"
-          class="border border-slate-300 block w-full rounded-lg p-2.5 px-4 pt-4 text-slate-700/90 focus:border-transparent focus:outline-emerald-500/90"
+          class="border border-slate-300 block w-full rounded-lg p-2.5 pr-10 px-4 pt-4 text-slate-700/90 focus:border-transparent focus:outline-emerald-500/90"
         />
+        <div
+          class="absolute right-2 top-0 flex h-full justify-center items-center"
+        >
+          <EyeIcon
+            v-if="!isShowPassword"
+            @click="isShowPassword = !isShowPassword"
+            class="w-7 h-7 text-slate-700/90"
+          />
+          <EyeSlashIcon
+            v-else
+            @click="isShowPassword = !isShowPassword"
+            class="w-7 h-7 text-slate-700/90"
+          />
+        </div>
       </div>
       <div class="col-span-12 text-right">
         <router-link
