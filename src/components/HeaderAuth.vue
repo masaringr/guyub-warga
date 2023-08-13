@@ -21,11 +21,13 @@ const props = defineProps({
       <circle cx="101" cy="-35" r="328" fill="#1E6F58" />
       <circle cx="122" cy="-57" r="254" fill="#1D8567" />
     </svg>
-    <div class="absolute bottom-[30px] left-4 pb-4">
-      <h4 class="text-slate-50 font-semibold text-3xl">
-        {{ props.judul.main }}
-      </h4>
-      <span class="text-slate-300 text-md">{{ props.judul.sub }}</span>
-    </div>
+    <transition name="slide-fade" mode="out-in">
+      <div :key="props.judul.main" class="absolute bottom-[30px] left-4 pb-4">
+        <h4 class="text-slate-50 font-semibold text-3xl">
+          {{ props.judul.main }}
+        </h4>
+        <span class="text-slate-300 text-md">{{ props.judul.sub }}</span>
+      </div>
+    </transition>
   </div>
 </template>

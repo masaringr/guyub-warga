@@ -3,7 +3,6 @@ import Banner from "@components/Banner.vue";
 import MainMenu from "@components/Menu.vue";
 import Berita from "@components/Berita.vue";
 import { UserIcon, BellIcon } from "@heroicons/vue/24/solid";
-console.log("setup home...");
 </script>
 <template>
   <header class="flex flex-row gap-2 justify-between items-center p-4 py-3">
