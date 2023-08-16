@@ -2,7 +2,7 @@
 import { ref } from "vue";
 import {
   ArrowRightOnRectangleIcon,
-  DocumentTextIcon,
+  UsersIcon,
   EyeIcon,
   EyeSlashIcon,
 } from "@heroicons/vue/24/outline";
@@ -86,10 +86,10 @@ const isShowPassword = ref(false);
       <div class="mt-2">
         <router-link
           :to="{ name: 'Register', replace: true }"
-          type="submit"
+          type="button"
           class="capitalize text-xl w-full flex flex-row justify-center items-center gap-2 rounded-lg p-3 py-2 bg-amber-500/90 text-slate-100 tracking-wide"
         >
-          <DocumentTextIcon class="w-6 h-6 stroke-2 text-slate-100" />
+          <UsersIcon class="w-6 h-6 stroke-2 text-slate-100" />
           <span>daftar sekarang</span>
         </router-link>
       </div>

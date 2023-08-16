@@ -27,6 +27,22 @@ const menus = ref([
     thumbnail:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Eopsaltria_australis_-_Mogo_Campground.jpg/640px-Eopsaltria_australis_-_Mogo_Campground.jpg",
   },
+  {
+    id: 4,
+    judul: "Perayaan HUT RI ke 78",
+    tanggal: "20 Mar 2023",
+    shortdesc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`,
+    thumbnail:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Eopsaltria_australis_-_Mogo_Campground.jpg/640px-Eopsaltria_australis_-_Mogo_Campground.jpg",
+  },
+  {
+    id: 5,
+    judul: "Perayaan HUT RI ke 78",
+    tanggal: "20 Mar 2023",
+    shortdesc: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.`,
+    thumbnail:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Eopsaltria_australis_-_Mogo_Campground.jpg/640px-Eopsaltria_australis_-_Mogo_Campground.jpg",
+  },
 ]);
 </script>
 <template>
@@ -47,10 +63,10 @@ const menus = ref([
           </div>
           <div class="col-span-8 flex flex-col justify-between gap-1">
             <div>
-              <h4 class="text-[12px] text-slate-700 font-semibold line-clamp-1">
+              <h4 class="text-[14px] text-slate-700 font-semibold line-clamp-1">
                 {{ menu.judul }}
               </h4>
-              <p class="text-[10px] line-clamp-2 text-slate-400">
+              <p class="text-[11px] line-clamp-2 text-slate-400">
                 {{ menu.shortdesc }}
               </p>
             </div>
@@ -64,7 +80,7 @@ const menus = ref([
         </div>
       </div>
       <div
-        class="col-span-12 text-emerald-700/80 flex items-center justify-center gap-1 mb-2 mt-2"
+        class="col-span-12 text-emerald-700/80 flex items-center justify-center gap-1 mb-4 mt-2"
       >
         <span class="font-semibold text-sm">Lihat Info Lainnya</span>
         <ChevronDoubleRightIcon class="w-4 h-4 stroke-2" />

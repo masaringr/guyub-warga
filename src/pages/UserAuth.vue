@@ -35,9 +35,6 @@ const textHeader = computed(() => {
           </div>
         </transition>
       </router-view>
-      <!-- <Transition name="slide-fade" mode="out-in">
-        <router-view></router-view>
-      </Transition> -->
     </div>
   </div>
 </template>

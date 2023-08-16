@@ -18,7 +18,7 @@ import { UserIcon, BellIcon } from "@heroicons/vue/24/solid";
       <span class="flex gap-2">
         <BellIcon class="text-yellow-400/90 w-7 h-7" />
         <div class="w-[2px] bg-slate-300"></div>
-        <router-link :to="{ name: 'Login' }">
+        <router-link type="button" :to="{ name: 'Login' }">
           <UserIcon class="text-yellow-400/90 w-7 h-7" />
         </router-link>
       </span>
