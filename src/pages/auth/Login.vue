@@ -26,7 +26,7 @@ const isShowPassword = ref(false);
           class="border border-slate-300 block w-full rounded-lg p-2.5 px-4 pt-4 text-slate-700/90 focus:border-transparent focus:outline-emerald-500/90"
         />
       </div>
-      <div class="col-span-12 relative mt-6">
+      <!-- <div class="col-span-12 relative mt-6">
         <label
           class="absolute bg-white text-base -top-[12px] left-2 px-2 text-slate-700/90"
           >Password</label
@@ -50,14 +50,14 @@ const isShowPassword = ref(false);
             class="w-7 h-7 text-slate-700/90"
           />
         </div>
-      </div>
-      <div class="col-span-12 text-right">
+      </div> -->
+      <!-- <div class="col-span-12 text-right">
         <router-link
           :to="{ name: 'ForgotPwd', replace: true }"
           class="text-amber-600/70 font-semibold text-sm"
           >Lupa Password?</router-link
         >
-      </div>
+      </div> -->
       <div class="col-span-12 mt-2">
         <button
           type="submit"
@@ -79,7 +79,7 @@ const isShowPassword = ref(false);
         class="absolute w-3 h-3 bg-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full"
       ></div>
     </div>
-    <div class="mt-4 text-center">
+    <!-- <div class="mt-4 text-center">
       <span class="text-slate-700/50 font-semibold text-sm"
         >Belum punya akun?</span
       >
@@ -93,6 +93,6 @@ const isShowPassword = ref(false);
           <span>daftar sekarang</span>
         </router-link>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
